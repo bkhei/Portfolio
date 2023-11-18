@@ -43,7 +43,7 @@ ul{
     font-weight: bold;
     color: #f9faf8;
     font-style:italic;
-    margin-left: 100px;
+    margin-left: 150px;
 }
 
 .links{
@@ -56,22 +56,26 @@ ul{
         display: flex;
         justify-content: space-evenly;
         padding: 16px;
+        margin-bottom: auto;
     }
     .left{
-
+        padding: 8px;
+        flex-direction: column;
     }
     .s1text{
         font-size: 48px;
         font-weight:bold;
         color: #F9faf8;
+        margin-left:auto;
 }
     .s1bottomtext{
         font-size:18px;
         color: #E5E7EB;
-
+        margin-left:auto;
     }
     .s1button{
         color: #ffffff;
+        margin-left:auto;
 }
     .right img{
     display: flex;
@@ -79,6 +83,20 @@ ul{
     margin: 0;
     padding: 0;
     margin-left:auto;
+}
+
+.s1button button{
+    background-color: #3882f6;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 25px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow 0 2px 4px rgba(0,0,0,0.2;)
+
 }
 /* Section 2*/
 
