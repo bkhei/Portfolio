@@ -57,6 +57,7 @@ ul{
         justify-content: space-evenly;
         padding: 16px;
         margin-bottom: auto;
+        font-family: 'Courier New', Courier, monospace;
     }
     .left{
         padding: 8px;
@@ -74,7 +75,6 @@ ul{
         margin-left:auto;
     }
     .s1button{
-        color: #ffffff;
         margin-left:auto;
 }
     .right img{
@@ -85,7 +85,7 @@ ul{
     margin-left:auto;
 }
 
-.s1button button{
+    .s1button button{
     background-color: #3882f6;
     font-size: 16px;
     cursor: pointer;
@@ -99,4 +99,89 @@ ul{
 
 }
 /* Section 2*/
+.random{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 70px;
+    height: auto;
+}
+.randomheader h1{
+    font-size: 36px;
+    color: #1f2937;
+}
+.s2container{
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+}
 
+.subtext img{
+    width: 200px;
+    height: 100px;
+    border: 2px solid #3882f6;
+    border-radius: 10px;
+    box-shadow 0 2px 4px rgba(0,0,0,0.2;)
+} 
+/* Section 3*/
+.quotecontainer{
+    display: flex;
+    background: #E5E7EB;
+    margin: auto;
+    height: auto;
+    padding: 50px;
+}
+.quote{
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+}
+.quoteauthor{
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin: auto;
+    padding: 100px;
+}
+/* Section 4*/
+.signup{
+    background-color: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+.smallcontainer{
+    display: flex;
+    background-color:#3882f6;
+    width: 1200px;
+    height: 100px;
+    margin: 50px;
+    border-radius: 5px;
+    padding: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.signupscontainer{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f9faf8;
+    margin: 8px;
+}
+.signuptext{
+    font-weight:bold;
+    font-size: 24px;
+    align-self: center;
+}
+.signupsubtext{
+    font-style: normal;
+
+}
+.signupbutton button{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 7px;
+    padding-inline: 30px;
+    background-color:#3882f6;
+    border-style:double;
+    border-radius: 10px;
+    color: #f9faf8;
+    border-color: #f9faf8;
+}
