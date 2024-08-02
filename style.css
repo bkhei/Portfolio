@@ -1,20 +1,21 @@
 /* Universal Classes */
-body{
+body {
     display: flex;
     margin: 0;
     min-height: 100vh;
     flex-direction: column;
     width: 100%;
+    font-family: 'Lato', sans-serif;
 }
 
-.links a{
+.links a {
     color: #e5e7eb;
     text-decoration: none;
     font-style: normal;
     font-size: 18px;
 }
 
-ul{
+ul {
     display: flex;
     list-style: none;
     margin: 0;
@@ -23,69 +24,75 @@ ul{
     margin-right: 200px;
 }
 
-
-/* Section 1*/
-.ultimateheader{
+/* Section 1 */
+.ultimateheader {
     background-color: #1F2937;
-    height:500px;
+    height: 500px;
+    padding-top: 80px; /* Adjust padding to avoid content being hidden behind the fixed header */
 }
 
-.header{
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #3a3a3a; /* Grayish background color */
+    color: white;
     display: flex;
-    justify-content: space-evenly;
-    padding: 24px;
-    margin-bottom: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 2px -2px gray;
+    z-index: 1000;
 }
 
 .logo {
-    font-family: 'C059';
+    font-family: 'Raleway', sans-serif; /* Cleaner font for the heading */
     font-size: 24px;
-    font-weight: bold;
-    color: #f9faf8;
-    font-style:italic;
+    font-weight: 700;
     margin-left: 150px;
 }
 
-.links{
+.links {
+    margin-left: auto;
+}
+
+/* Section 1 Subsection */
+.s1container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 16px;
+    margin-bottom: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.left {
+    padding: 8px;
+    flex-direction: column;
+}
+
+.s1text {
+    font-size: 48px;
+    font-weight: bold;
+    color: #F9faf8;
+    margin-left: auto;
+}
+
+.s1bottomtext {
+    font-size: 18px;
+    color: #E5E7EB;
     margin-left: auto;
 }
 
 
-    /* Section 1 Subsection*/
-    .s1container{
-        display: flex;
-        justify-content: space-evenly;
-        padding: 16px;
-        margin-bottom: auto;
-        font-family: 'Courier New', Courier, monospace;
-    }
-    .left{
-        padding: 8px;
-        flex-direction: column;
-    }
-    .s1text{
-        font-size: 48px;
-        font-weight:bold;
-        color: #F9faf8;
-        margin-left:auto;
-}
-    .s1bottomtext{
-        font-size:18px;
-        color: #E5E7EB;
-        margin-left:auto;
-    }
-    .s1button{
-        margin-left:auto;
-}
-    .right img{
+.right img {
     display: flex;
     width: 400px;
     margin: 0;
     padding: 0;
-    margin-left:auto;
+    margin-left: auto;
 }
 
-    .s1button button{
+.s1button button {
     background-color: #3882f6;
     font-size: 16px;
     cursor: pointer;
@@ -95,64 +102,71 @@ ul{
     color: white;
     border: none;
     border-radius: 10px;
-    box-shadow 0 2px 4px rgba(0,0,0,0.2;)
-
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-/* Section 2*/
-.random{
+
+/* Section 2 */
+.random {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     padding: 70px;
     height: auto;
 }
-.randomheader h1{
+
+.randomheader h1 {
     font-size: 36px;
     color: #1f2937;
 }
-.s2container{
+
+.s2container {
     display: flex;
     justify-content: center;
     gap: 52px;
 }
 
-.subtext img{
-    width: 200px;
-    height: 100px;
+.subtext img {
+    width: 250px; /* Make the images overall bigger */
+    height: 200px; /* Adjust the height to not be too wide */
     border: 2px solid #3882f6;
     border-radius: 10px;
-    box-shadow 0 2px 4px rgba(0,0,0,0.2;)
-} 
-/* Section 3*/
-.quotecontainer{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Section 3 */
+.quotecontainer {
     display: flex;
     background: #E5E7EB;
     margin: auto;
     height: auto;
     padding: 50px;
 }
-.quote{
+
+.quote {
     font-size: 36px;
     font-weight: light;
     font-style: italic;
 }
-.quoteauthor{
+
+.quoteauthor {
     font-size: 24px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     margin: auto;
     padding: 100px;
 }
-/* Section 4*/
-.signup{
+
+/* Section 4 */
+.signup {
     background-color: white;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 400px;
 }
-.smallcontainer{
+
+.smallcontainer {
     display: flex;
-    background-color:#3882f6;
+    background-color: #3882f6;
     width: 1200px;
     height: 100px;
     margin: 50px;
@@ -161,27 +175,68 @@ ul{
     align-items: center;
     justify-content: space-between;
 }
-.signupscontainer{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.signupscontainer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #f9faf8;
     margin: 8px;
 }
-.signuptext{
-    font-weight:bold;
+
+.signuptext {
+    font-weight: bold;
     font-size: 24px;
     align-self: center;
 }
-.signupsubtext{
-    font-style: normal;
 
+.signupsubtext {
+    font-style: normal;
 }
-.signupbutton button{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.signupbutton button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 7px;
     padding-inline: 30px;
-    background-color:#3882f6;
-    border-style:double;
+    background-color: #3882f6;
+    border-style: double;
     border-radius: 10px;
     color: #f9faf8;
     border-color: #f9faf8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Updated Contact Section */
+.contact {
+    text-align: center;
+    padding: 20px;
+    background-color: #1F2937; /* Match the color of the ultimateheader */
+    color: white; /* Ensure text is readable on dark background */
+}
+
+.contact h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white; /* Ensure text is readable on dark background */
+}
+
+.contact p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: white; /* Ensure text is readable on dark background */
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
 }

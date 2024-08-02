@@ -1,0 +1,151 @@
+/* Universal Classes */
+body {
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    background-color: #f9fafb; /* Light background color */
+    color: #1f2937; /* Dark text color */
+}
+
+.links a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.links a.active {
+    color: #ffffff; /* Highlight current page link */
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 24px;
+    margin-right: 200px;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #3a3a3a; /* Grayish background color */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 2px -2px gray;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif; /* Cleaner font for the heading */
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 150px;
+}
+
+.links {
+    margin-left: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Resume Section */
+.resume {
+    padding: 100px 20px 20px 20px; /* Adjust padding to avoid content being hidden behind the fixed header */
+    background-color: #f9fafb; /* Light background color */
+    flex: 1;
+}
+
+.resume-container {
+    max-width: 800px;
+    margin: auto;
+    background: white; /* White background for container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.resume-container h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center; /* Center the name */
+}
+
+.resume-container p, .resume-container ul {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.resume-container h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center; /* Center main headings */
+}
+
+.resume-container h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.resume-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.section-content {
+    margin-bottom: 20px;
+}
+
+/* Divider */
+.divider {
+    border-top: 2px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center; /* Center the contact section */
+    padding: 20px;
+    background-color: #3a3a3a;
+    color: white;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
+}
+
+/* Align project name and date separately */
+.project-name, .experience-role {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-name h3, .experience-role h3 {
+    flex: 1 1 70%;
+    margin: 0;
+}
+
+.project-name em, .experience-role em {
+    flex: 1 1 30%;
+    text-align: right;
+    margin: 0;
+}
